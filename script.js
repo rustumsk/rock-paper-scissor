@@ -21,12 +21,23 @@ function playRound(playerChoice, computerChoice){
 }
 //create a game function that plays the game best of 5
 function game(){
+    let playerCount = 0;
+    let computerCount = 0;
     for (let i = 0; i < 5; i++){
         let computerChoice = getComputerChoice();
         let playerChoice = prompt("Enter Rock or Scissor or Paper");
 
         let win = playRound(playerChoice, computerChoice);
+
+        if(win.search("Lose") != -1){
+            computerCount++;
+        }
+        if(win.search("Win") !== -1){
+            playerCount++;
+        }
         console.log(win);
+        console.log(`Player Wins: ${playerCount}`);
+        console.log(`Computer Wins: ${computerCount}`);
     }
 }
 
