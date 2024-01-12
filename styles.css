@@ -1,0 +1,71 @@
+
+.container{
+    flex: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.button{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: plum;
+    color: black;
+    border: solid black 10px;
+}
+.rock{
+    background-color: green;
+}
+.paper{
+    background-color: orange;
+}
+.scissor{
+    background-color: red;
+}
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+} 
+.player{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    border: solid black 10px;
+    margin-bottom: 100px;
+}
+.score{
+    text-align: center;
+    font-family: 'Courier New';
+    text-shadow: -.03em -.03em 0 black;
+    background-color: gray;
+    font-weight: bolder;
+    font-size: 50px;
+    border: solid black 5px;
+    color: greenyellow;
+    margin-bottom: 100px;
+}
+.choice{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+.status{
+    font-size: 50px;
+}
+
